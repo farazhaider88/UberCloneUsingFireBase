@@ -17,6 +17,8 @@
 		594558FE2257C04F00D17A2B /* UberCloneUsingFireBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594558FD2257C04F00D17A2B /* UberCloneUsingFireBaseTests.swift */; };
 		594559092257C04F00D17A2B /* UberCloneUsingFireBaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594559082257C04F00D17A2B /* UberCloneUsingFireBaseUITests.swift */; };
 		5945591A2258B3CB00D17A2B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594559192258B3CB00D17A2B /* GradientView.swift */; };
+		5945591E2258B85F00D17A2B /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5945591D2258B85F00D17A2B /* RoundImageView.swift */; };
+		594559202258B94E00D17A2B /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5945591F2258B94E00D17A2B /* RoundedShadowView.swift */; };
 		60B32265931EDA4308E23862 /* Pods_UberCloneUsingFireBaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EEE75F9995F9A1052BF0F1 /* Pods_UberCloneUsingFireBaseTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,8 @@
 		594559082257C04F00D17A2B /* UberCloneUsingFireBaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberCloneUsingFireBaseUITests.swift; sourceTree = "<group>"; };
 		5945590A2257C04F00D17A2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		594559192258B3CB00D17A2B /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		5945591D2258B85F00D17A2B /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		5945591F2258B94E00D17A2B /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
 		71431F6828A1D026A12B7999 /* Pods_UberCloneUsingFireBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UberCloneUsingFireBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D509B42BF7B1412A0B6A881 /* Pods-UberCloneUsingFireBaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberCloneUsingFireBaseUITests.debug.xcconfig"; path = "Target Support Files/Pods-UberCloneUsingFireBaseUITests/Pods-UberCloneUsingFireBaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC76196712DE05BFBA6DD99E /* Pods-UberCloneUsingFireBaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberCloneUsingFireBaseTests.release.xcconfig"; path = "Target Support Files/Pods-UberCloneUsingFireBaseTests/Pods-UberCloneUsingFireBaseTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				594559192258B3CB00D17A2B /* GradientView.swift */,
+				5945591D2258B85F00D17A2B /* RoundImageView.swift */,
+				5945591F2258B94E00D17A2B /* RoundedShadowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -425,6 +431,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				594558EB2257C04E00D17A2B /* ViewController.swift in Sources */,
+				5945591E2258B85F00D17A2B /* RoundImageView.swift in Sources */,
+				594559202258B94E00D17A2B /* RoundedShadowView.swift in Sources */,
 				594558E92257C04E00D17A2B /* AppDelegate.swift in Sources */,
 				5945591A2258B3CB00D17A2B /* GradientView.swift in Sources */,
 			);
