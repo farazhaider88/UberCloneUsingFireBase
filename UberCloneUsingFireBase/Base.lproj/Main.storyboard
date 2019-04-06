@@ -62,17 +62,33 @@
                                     <constraint firstAttribute="height" constant="30" id="kLB-q4-yx5"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoy-Zh-Muf">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FIl-tD-KSh">
                                 <rect key="frame" x="20" y="587" width="335" height="60"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoy-Zh-Muf" customClass="RoundedShadowButton" customModule="UberCloneUsingFireBase" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="tYe-f9-mk7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                        <state key="normal" title="REQUEST RIDE">
+                                            <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="requestRideButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B3M-YC-KsI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="tYe-f9-mk7"/>
+                                    <constraint firstItem="eoy-Zh-Muf" firstAttribute="top" secondItem="FIl-tD-KSh" secondAttribute="top" id="D60-s8-GTk"/>
+                                    <constraint firstAttribute="trailing" secondItem="eoy-Zh-Muf" secondAttribute="trailing" id="VM7-dp-TyL"/>
+                                    <constraint firstAttribute="bottom" secondItem="eoy-Zh-Muf" secondAttribute="bottom" id="VyL-FN-1Gd"/>
+                                    <constraint firstAttribute="height" constant="60" id="Wsw-bw-lRi"/>
+                                    <constraint firstItem="eoy-Zh-Muf" firstAttribute="leading" secondItem="FIl-tD-KSh" secondAttribute="leading" id="tJV-Uw-HfB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
-                                <state key="normal" title="REQUEST RIDE">
-                                    <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgB-oC-oO4">
                                 <rect key="frame" x="295" y="519" width="60" height="60"/>
                                 <constraints>
@@ -90,13 +106,18 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eQL-A4-Npa">
                                                 <rect key="frame" x="0.0" y="0.0" width="285" height="25"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ENW-ms-6VQ">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ENW-ms-6VQ" customClass="CircleView" customModule="UberCloneUsingFireBase" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="5" width="15" height="15"/>
                                                         <color key="backgroundColor" red="0.4431372549" green="0.61960784310000006" blue="0.098039215690000001" alpha="1" colorSpace="deviceRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="15" id="SvM-EV-1Av"/>
                                                             <constraint firstAttribute="height" constant="15" id="dR0-uc-9e6"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.054901960784313725" green="0.46274509803921571" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="My Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uGT-1s-z6Y">
                                                         <rect key="frame" x="25" y="1.5" width="260" height="22"/>
@@ -119,13 +140,18 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cOM-re-GUR">
                                                 <rect key="frame" x="0.0" y="36" width="285" height="25"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFE-uN-Z8d">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFE-uN-Z8d" customClass="CircleView" customModule="UberCloneUsingFireBase" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="5" width="15" height="15"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="15" id="QhH-G8-ukL"/>
                                                             <constraint firstAttribute="height" constant="15" id="kTc-gD-hIT"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.30980392156862746" green="0.30980392156862746" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Where are you going?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PrC-qh-eLk">
                                                         <rect key="frame" x="25" y="1.5" width="260" height="22"/>
@@ -156,26 +182,29 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zGx-TT-zE3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2s4-E9-Wh5"/>
-                            <constraint firstItem="FgB-oC-oO4" firstAttribute="trailing" secondItem="eoy-Zh-Muf" secondAttribute="trailing" id="4Iv-0p-S9g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FIl-tD-KSh" secondAttribute="trailing" constant="20" id="An1-ng-UEt"/>
                             <constraint firstItem="Qxp-Zu-xmE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CRS-xC-JHG"/>
                             <constraint firstItem="zGx-TT-zE3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ct8-oQ-4UP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qxp-Zu-xmE" secondAttribute="bottom" id="Fhd-4C-yBo"/>
+                            <constraint firstItem="FIl-tD-KSh" firstAttribute="top" secondItem="FgB-oC-oO4" secondAttribute="bottom" constant="8" id="HR4-zs-IJR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SsM-Ws-Wtg" secondAttribute="trailing" constant="20" id="OQB-SN-k5l"/>
                             <constraint firstItem="Qxp-Zu-xmE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="R1z-2Q-6kF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FgB-oC-oO4" secondAttribute="trailing" constant="20" id="UWL-Of-f3S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FIl-tD-KSh" secondAttribute="bottom" constant="20" id="UmG-fE-0p6"/>
                             <constraint firstItem="zGx-TT-zE3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aD1-Wv-gfY"/>
+                            <constraint firstItem="FIl-tD-KSh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aeu-Pk-0NG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wmQ-OU-xIc" secondAttribute="trailing" constant="20" id="asJ-4w-ujq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qxp-Zu-xmE" secondAttribute="trailing" id="dab-CF-daB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eoy-Zh-Muf" secondAttribute="trailing" constant="20" id="fey-ej-Rg6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eoy-Zh-Muf" secondAttribute="bottom" constant="20" id="j1F-0d-Zbu"/>
-                            <constraint firstItem="eoy-Zh-Muf" firstAttribute="top" secondItem="FgB-oC-oO4" secondAttribute="bottom" constant="8" id="lUa-Zz-KR8"/>
                             <constraint firstItem="wmQ-OU-xIc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="p8A-W7-Dt0"/>
-                            <constraint firstItem="eoy-Zh-Muf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pqd-B8-1iS"/>
                             <constraint firstItem="SsM-Ws-Wtg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="r23-FB-hd0"/>
                             <constraint firstItem="SsM-Ws-Wtg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="sBu-NN-PlF"/>
                             <constraint firstItem="wmQ-OU-xIc" firstAttribute="top" secondItem="SsM-Ws-Wtg" secondAttribute="bottom" constant="10" id="uEo-Ql-2XX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="requestRideButton" destination="eoy-Zh-Muf" id="eEh-Wi-aMa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
