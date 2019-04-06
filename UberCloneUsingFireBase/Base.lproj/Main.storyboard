@@ -21,10 +21,11 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Qxp-Zu-xmE">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </mapView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zGx-TT-zE3">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zGx-TT-zE3" customClass="GradientView" customModule="UberCloneUsingFireBase" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="gBJ-Ck-CXn"/>
+                                </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="SsM-Ws-Wtg">
                                 <rect key="frame" x="20" y="30" width="335" height="30"/>
@@ -154,11 +155,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="zGx-TT-zE3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2s4-E9-Wh5"/>
                             <constraint firstItem="FgB-oC-oO4" firstAttribute="trailing" secondItem="eoy-Zh-Muf" secondAttribute="trailing" id="4Iv-0p-S9g"/>
                             <constraint firstItem="Qxp-Zu-xmE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CRS-xC-JHG"/>
+                            <constraint firstItem="zGx-TT-zE3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ct8-oQ-4UP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qxp-Zu-xmE" secondAttribute="bottom" id="Fhd-4C-yBo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SsM-Ws-Wtg" secondAttribute="trailing" constant="20" id="OQB-SN-k5l"/>
                             <constraint firstItem="Qxp-Zu-xmE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="R1z-2Q-6kF"/>
+                            <constraint firstItem="zGx-TT-zE3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aD1-Wv-gfY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wmQ-OU-xIc" secondAttribute="trailing" constant="20" id="asJ-4w-ujq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qxp-Zu-xmE" secondAttribute="trailing" id="dab-CF-daB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eoy-Zh-Muf" secondAttribute="trailing" constant="20" id="fey-ej-Rg6"/>

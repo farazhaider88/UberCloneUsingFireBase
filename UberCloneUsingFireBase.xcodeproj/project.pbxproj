@@ -16,6 +16,7 @@
 		594558F32257C04F00D17A2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 594558F12257C04F00D17A2B /* LaunchScreen.storyboard */; };
 		594558FE2257C04F00D17A2B /* UberCloneUsingFireBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594558FD2257C04F00D17A2B /* UberCloneUsingFireBaseTests.swift */; };
 		594559092257C04F00D17A2B /* UberCloneUsingFireBaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594559082257C04F00D17A2B /* UberCloneUsingFireBaseUITests.swift */; };
+		5945591A2258B3CB00D17A2B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594559192258B3CB00D17A2B /* GradientView.swift */; };
 		60B32265931EDA4308E23862 /* Pods_UberCloneUsingFireBaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EEE75F9995F9A1052BF0F1 /* Pods_UberCloneUsingFireBaseTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		594559042257C04F00D17A2B /* UberCloneUsingFireBaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberCloneUsingFireBaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		594559082257C04F00D17A2B /* UberCloneUsingFireBaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberCloneUsingFireBaseUITests.swift; sourceTree = "<group>"; };
 		5945590A2257C04F00D17A2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		594559192258B3CB00D17A2B /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		71431F6828A1D026A12B7999 /* Pods_UberCloneUsingFireBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UberCloneUsingFireBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D509B42BF7B1412A0B6A881 /* Pods-UberCloneUsingFireBaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberCloneUsingFireBaseUITests.debug.xcconfig"; path = "Target Support Files/Pods-UberCloneUsingFireBaseUITests/Pods-UberCloneUsingFireBaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC76196712DE05BFBA6DD99E /* Pods-UberCloneUsingFireBaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UberCloneUsingFireBaseTests.release.xcconfig"; path = "Target Support Files/Pods-UberCloneUsingFireBaseTests/Pods-UberCloneUsingFireBaseTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +116,9 @@
 		594558E72257C04D00D17A2B /* UberCloneUsingFireBase */ = {
 			isa = PBXGroup;
 			children = (
+				594559182258B3A800D17A2B /* Controller */,
+				594559172258B3A200D17A2B /* View */,
+				594559162258B39700D17A2B /* Model */,
 				594558E82257C04E00D17A2B /* AppDelegate.swift */,
 				594558EA2257C04E00D17A2B /* ViewController.swift */,
 				594558EC2257C04E00D17A2B /* Main.storyboard */,
@@ -142,6 +147,28 @@
 			path = UberCloneUsingFireBaseUITests;
 			sourceTree = "<group>";
 		};
+		594559162258B39700D17A2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		594559172258B3A200D17A2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				594559192258B3CB00D17A2B /* GradientView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		594559182258B3A800D17A2B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		6AF839EC9A4DCCEBECACDE2D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +189,6 @@
 				8D509B42BF7B1412A0B6A881 /* Pods-UberCloneUsingFireBaseUITests.debug.xcconfig */,
 				F6782DE77A72345AE3044B38 /* Pods-UberCloneUsingFireBaseUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -400,6 +426,7 @@
 			files = (
 				594558EB2257C04E00D17A2B /* ViewController.swift in Sources */,
 				594558E92257C04E00D17A2B /* AppDelegate.swift in Sources */,
+				5945591A2258B3CB00D17A2B /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
